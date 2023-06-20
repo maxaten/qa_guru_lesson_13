@@ -26,6 +26,7 @@ def test_github(all_windows_size):
 
 
 def test_github_desktop(all_windows_size):
+    browser.open('')
     browser.driver.set_window_size(all_windows_size[0],
                                    all_windows_size[1])
     if all_windows_size[0] < 900:
@@ -36,6 +37,7 @@ def test_github_desktop(all_windows_size):
 
 
 def test_github_mobile(all_windows_size):
+    browser.open('')
     browser.driver.set_window_size(all_windows_size[0],
                                    all_windows_size[1])
     if all_windows_size[0] > 900:
